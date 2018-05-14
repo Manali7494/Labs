@@ -32,7 +32,7 @@ function popBottles(dollars){
     return sum + value;
   });
 
-  var string = "TOTAL BOTTLES: " + sum + "\n" + "TOTAL EARNED: \n BOTTLES: " + obtainedBottles + "\n CAPS: " + obtainedCaps;
+  var string = "TOTAL BOTTLES: " + sum + "\n" + "REMAINING BOTTLES: " + emptyBottles + "\n REMAINING CAPS: " + caps + "\n TOTAL EARNED: \n BOTTLES: " + obtainedBottles + "\n CAPS: " + obtainedCaps;
   console.log(string);
 }
 
