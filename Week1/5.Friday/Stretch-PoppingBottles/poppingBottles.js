@@ -27,8 +27,8 @@ function popBottles(dollars){
   var sum = array.reduce(function(sum, value){
     return sum + value;
   });
-  return sum;
+  console.log(sum);
 }
 
-console.log(popBottles(40));
-
+var dollars = process.argv[2];
+popBottles(dollars);
