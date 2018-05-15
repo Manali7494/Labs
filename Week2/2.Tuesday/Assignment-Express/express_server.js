@@ -1,8 +1,7 @@
-var express = require('express');
-var app = express();
 var PORT = process.env.PORT || 8080; // default port setup
 
-var urlDataBase = {
+
+var urlDatabase = {
   'b2xVn2': 'http://www.lighthouselabs.ca',
   '9s5m5xK': 'http://www.google.com'
 };
@@ -14,7 +13,7 @@ app.get("/", (request, response) => {
 });
 
 app.get("/urls.json", (request, response) => {
-  response.json(urlDataBase); // .json ensures proper display on the page
+  response.json(urlDatabase); // .json ensures proper display on the page
 });
 
 
