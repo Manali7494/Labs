@@ -1,7 +1,6 @@
 function maxProfit(array){
 
   var firstArray = array;
-  console.log(firstArray);
   var sumArray = [];
   firstArray.forEach(function (element, index){
     for (var i = index; i < firstArray.length; i++){
@@ -11,9 +10,9 @@ function maxProfit(array){
       }
     }
   });
-  console.log(sumArray);
   var maxNum = Math.max.apply(0, sumArray);
   return maxNum;
 }
 
-console.log(maxProfit([45, 24, 35, 31, 40, 38, 11]));
+var result = maxProfit([45, 24, 35, 31, 40, 38, 11]);
+console.log(result);
