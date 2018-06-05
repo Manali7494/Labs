@@ -9,11 +9,10 @@ class Pizza {
   }
 }
 
-let pizza1 = new Pizza('large', 'thin');
-let pizza2 = new Pizza('large','thick');
+let pizza1 = new Pizza("large", "thin");
+let pizza2 = new Pizza("large", "thick");
 pizza1.addTopping("chicken");
 pizza1.addTopping("pineapple");
-
 
 // console.log(pizza1.toppings);
 console.log(pizza1);
