@@ -1,13 +1,12 @@
 {
-  "name": "Stretch-FishTank",
-  "version": "1.0.0",
-  "description": "",
+  "name": "fishtank",
+  "version": "0.1.0",
+  "description": "Fish!  In a tank!",
   "main": "express_server.js",
   "scripts": {
     "start": "node express_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
