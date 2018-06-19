@@ -36,3 +36,4 @@ error_messages = new_store.errors.messages
 
 p "Name Error: #{error_messages[:name][0]}"
 p "Revenue Error: #{error_messages[:annual_revenue][0]}"
+p "Apparel Error: #{error_messages[:apparel_exists][0]}"
