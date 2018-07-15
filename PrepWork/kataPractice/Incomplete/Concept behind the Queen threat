@@ -1,0 +1,63 @@
+Concept behind the Queen threat
+
+// create a array just for visual purposes
+// get one of the arrays for the queen
+
+// Create 8 while loops (with conditional of reached end == false)
+. It will reach true when i , j reaches end
+
+// the 4 while loops will take care of diagnal
+// while the other 4 will create top, bottom, left and right arrays
+
+// once array created, loop through that created array and check for a match with the queen.
+
+// have to have double for loops because it can't match arrays.
+
+i on the left and j on the TOP
+
+-------------
+Sample:
+var md1 = [['one','one','three'],['four','five','five'],['one','one','one']];
+
+var md2 = [['one','one','nine'],['one','one','one'],['two','two'],['two','two','two']];
+
+//Iterate through all elements in first array
+for(var x = 0; x < md1.length; x++){
+
+    //Iterate through all elements in second array
+    for(var y = 0; y < md2.length; y++){
+
+      /*This causes us to compare all elements
+         in first array to each element in second array
+        Since md1[x] stays fixed while md2[y] iterates through second array.
+         We compare the first two indexes of each array in conditional
+      */
+      if(md1[x][0] == md2[y][0] && md1[x][1] == md2[y][1]){
+        alert("match found");
+        alert("Array 1 element with index " + x + " matches Array 2 element with index " + y);
+      }
+    }
+}
+
+--------------
+
+ [0,5]
+Diagnal check
+--> array with diagnoal numbers from one of the value --> in all four directions
+
+--> if the array matches one of them, then it will convert as true
+
+-->
+(i --> Right) (j --> down)
+Top Right: +i (right), -j (up)
+Bottom Right: +i (right), +j (down)
+Top Left: - i (left), -j (up)
+Bottom Left -i (left), + j (down)
+
+Check column: same i (+ and – j) --> ie up and down
+Check for row: same j (+ and -i) --> left and right
+
+create a seperate array
+
+-------------
+
