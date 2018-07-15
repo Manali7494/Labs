@@ -68,5 +68,5 @@ def ordered_by_qualifications(candidates)
   sorted_candidates = candidates.sort_by do |item|
     [-item[:years_of_experience], -item[:github_points]]
   end
-  return sorted_candidates
+  sorted_candidates
 end

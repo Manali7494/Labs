@@ -8,7 +8,6 @@ require './filters'
 ## Your test code can go here
 
 binding.pry
-
 pp @candidates[0]
 p "Experienced #{experienced?(@candidates[1])}"
 p "Github points 100+ #{github_points?(@candidates[1])}"
