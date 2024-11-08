@@ -1,2 +1,2 @@
-# LighthouseLabs
-Exercises during LHL
+# Labs
+Exercises
